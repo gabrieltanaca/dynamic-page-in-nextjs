@@ -7,7 +7,7 @@ interface SectionsProps {
 
 const SectionsComponent = ({ blocks }: PropsWithChildren<SectionsProps>) => {
   return (
-    <div id="Sections">
+    <div id="Sections" className='bg-white'>
       {blocks.map(block => {
         return <Sections.ContentBlocks {...block} />;
       })}

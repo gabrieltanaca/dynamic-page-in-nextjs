@@ -13,7 +13,7 @@ const HeaderComponent = ({ blocks }: HeaderProps) => {
       className="px-40"
     >
       <Header.Top />
-      <div className='py-3'>
+      <div className="py-3">
         {blocks.map(block =>
           block.contentProperties?.map(content => {
             const links = content.value.links || [];
@@ -23,7 +23,7 @@ const HeaderComponent = ({ blocks }: HeaderProps) => {
                   <Link
                     key={name}
                     href={url}
-                    className="text-lg"
+                    className="text-h4"
                   >
                     {name}
                   </Link>

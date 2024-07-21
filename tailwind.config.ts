@@ -16,6 +16,7 @@ const config: Config = {
         fontDark: '#212020',
         fontGray: '#C6C6C6',
         fontFooter: '#42393B',
+        borderGray: '#EFEBEB',
       },
       fontSize: {
         h1: '120px',
