@@ -9,7 +9,7 @@ const SectionsComponent = ({ blocks }: PropsWithChildren<SectionsProps>) => {
   return (
     <div id="Sections">
       {blocks.map(block => {
-        return <Sections.ContentBlocks {...block}/>;
+        return <Sections.ContentBlocks {...block} />;
       })}
     </div>
   );

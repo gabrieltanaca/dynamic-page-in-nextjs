@@ -7,7 +7,10 @@ interface FooterProps {
 
 const FooterComponent = ({ blocks }: FooterProps) => {
   return (
-    <div id="footer">
+    <div
+      id="footer"
+      className="bg-pink-500"
+    >
       {blocks.map(block =>
         block.contentProperties?.map(content => {
           const contentBlocks = content.value.blocks;

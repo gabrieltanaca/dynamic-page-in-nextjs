@@ -12,11 +12,7 @@ type ComponentsKey = keyof typeof Components;
 
 const Content = ({ alias = 'default', value }: ContentProperty) => {
   const Component = Components?.[alias as ComponentsKey] || Components.default;
-  const componentValue= value.value || value.sourceValue;
-  
-  if (typeof value.value === 'string') {
-    return <Component>{componentValue}</Component>;
-  }
+  return <Component>{value.value || value.sourceValue}</Component>;
 };
 
 export default Content;

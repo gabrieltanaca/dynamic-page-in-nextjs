@@ -1,9 +1,9 @@
 import Content from './Content';
-import HeroImage from './HeroImage';
 import Component from './Hero';
+import Text from './Text';
 
 export default {
   Component,
   Content,
-  HeroImage,
+  Text,
 };

@@ -45,6 +45,7 @@ interface Block {
 interface MediaItem {
   id: number;
   url: string;
+  altText?: string;
 }
 
 interface Link {
