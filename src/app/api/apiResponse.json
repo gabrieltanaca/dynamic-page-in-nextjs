@@ -1,0 +1,316 @@
+{
+  "data": {
+    "navigation": {
+      "nodes": [
+        {
+          "id": 1432,
+          "name": "Navegação",
+          "properties": [
+            {
+              "value": {
+                "alias": "footers",
+                "blocks": [
+                  {
+                    "contentAlias": "footer",
+                    "contentProperties": [
+                      {
+                        "value": {
+                          "alias": "navigationFooter",
+                          "blocks": [
+                            {
+                              "contentProperties": [
+                                {
+                                  "value": {
+                                    "value": "Squadfy",
+                                    "alias": "titleFooter"
+                                  }
+                                },
+                                {
+                                  "value": {
+                                    "alias": "linkFooter",
+                                    "links": [
+                                      {
+                                        "name": "Produtos",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/produtos"
+                                      },
+                                      {
+                                        "name": "Qualidade",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/qualidade"
+                                      },
+                                      {
+                                        "name": "Campanhas",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/campanhas"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "contentProperties": [
+                                {
+                                  "value": {
+                                    "value": "Ajuda",
+                                    "alias": "titleFooter"
+                                  }
+                                },
+                                {
+                                  "value": {
+                                    "alias": "linkFooter",
+                                    "links": [
+                                      {
+                                        "name": "Contato",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/contato"
+                                      },
+                                      {
+                                        "name": "Novidades",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/novidades"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "contentProperties": [
+                                {
+                                  "value": {
+                                    "value": "Informações legais",
+                                    "alias": "titleFooter"
+                                  }
+                                },
+                                {
+                                  "value": {
+                                    "alias": "linkFooter",
+                                    "links": [
+                                      {
+                                        "name": "Política de Privacidade",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/informacoes-legais/politica-de-privacidade"
+                                      },
+                                      {
+                                        "name": "Termos de Uso",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/informacoes-legais/termos-de-uso"
+                                      },
+                                      {
+                                        "name": "Política de Cookies",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/informacoes-legais/politica-de-cookies"
+                                      },
+                                      {
+                                        "name": "Acesso a dados pessoais",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/informacoes-legais/acesso-a-dados-pessoais"
+                                      },
+                                      {
+                                        "name": "Consumo Responsável",
+                                        "target": null,
+                                        "type": "CONTENT",
+                                        "url": "/informacoes-legais/consumo-responsavel"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "value": {
+                "alias": "headers",
+                "blocks": [
+                  {
+                    "contentAlias": "headerDefault",
+                    "contentProperties": [
+                      {
+                        "value": {
+                          "alias": "navigation",
+                          "links": [
+                            {
+                              "name": "Home",
+                              "target": null,
+                              "type": "CONTENT",
+                              "url": "/"
+                            },
+                            {
+                              "name": "Produtos",
+                              "target": null,
+                              "type": "CONTENT",
+                              "url": "/produtos"
+                            },
+                            {
+                              "name": "Sobre",
+                              "target": null,
+                              "type": "CONTENT",
+                              "url": "/sobre"
+                            },
+                            {
+                              "name": "Campanhas",
+                              "target": null,
+                              "type": "CONTENT",
+                              "url": "/campanhas"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "page": {
+      "id": 1430,
+      "contentId": "4d741c2d-85bd-48c0-ab01-cec9b576d9b5",
+      "properties": [
+        {
+          "value": {
+            "alias": "sections",
+            "blocks": [
+              {
+                "contentAlias": "contentImage",
+                "contentProperties": [
+                  {
+                    "alias": "overline",
+                    "value": {
+                      "value": "sobrelinha"
+                    }
+                  },
+                  {
+                    "alias": "title",
+                    "value": {
+                      "value": "Título"
+                    }
+                  },
+                  {
+                    "alias": "description",
+                    "value": {
+                      "sourceValue": "odio eget sapien venenatis maximus venenatis felis, ipsum ullamcorper elit lacus venenatis Quisque Nunc id Ut tincidunt id"
+                    }
+                  },
+                  {
+                    "alias": "image",
+                    "value": {
+                      "mediaItems": [
+                        {
+                          "id": 1365,
+                          "url": "https://acc-cms.kaiser.com.br/media/z2ifjagw/contentimage-garrafa.webp"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "alias": "altText",
+                    "value": {
+                      "value": "Campanha da Cerveja Kaiser."
+                    }
+                  }
+                ]
+              },
+              {
+                "contentAlias": "widgetCapture",
+                "contentProperties": [
+                  {
+                    "alias": "overline",
+                    "value": {
+                      "value": "Newsletter"
+                    }
+                  },
+                  {
+                    "alias": "title",
+                    "value": {
+                      "value": "Fique por dentro de tudo."
+                    }
+                  },
+                  {
+                    "alias": "description",
+                    "value": {
+                      "sourceValue": "<p>risus lorem. urna. vehicula, lobortis, amet, nec sit porta turpis Morbi vitae non convallis. Ut ex viverra maximus Nullam</p>"
+                    }
+                  },
+                  {
+                    "alias": "socialLoginOptions",
+                    "value": {
+                      "value": ["Facebook", "Google"]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "value": {
+            "alias": "hero",
+            "blocks": [
+              {
+                "contentAlias": "heroImage",
+                "contentProperties": [
+                  {
+                    "alias": "overline",
+                    "value": {
+                      "value": "sobrelinha"
+                    }
+                  },
+                  {
+                    "alias": "title",
+                    "value": {
+                      "value": "consectetur Praesent leo. "
+                    }
+                  },
+                  {
+                    "alias": "description",
+                    "value": {
+                      "sourceValue": "Breve descrição da página trazendo contexto para o usuário."
+                    }
+                  },
+                  {
+                    "alias": "image",
+                    "value": {
+                      "mediaItems": [
+                        {
+                          "id": 1360,
+                          "url": "https://acc-cms.kaiser.com.br/media/aaun2xqc/hero-lata.webp"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "alias": "altText",
+                    "value": {
+                      "value": "Lata de Cerveja Kaiser 350ml"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
