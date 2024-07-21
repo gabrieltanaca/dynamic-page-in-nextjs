@@ -20,6 +20,10 @@ interface NavNode {
 }
 
 interface Property {
+  value: PropertyValue;
+}
+
+interface ContentProperty {
   alias?: string;
   value: PropertyValue;
 }
@@ -35,7 +39,7 @@ interface PropertyValue {
 
 interface Block {
   contentAlias?: string;
-  contentProperties?: Property[];
+  contentProperties?: ContentProperty[];
 }
 
 interface MediaItem {

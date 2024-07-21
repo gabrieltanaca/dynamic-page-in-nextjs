@@ -1,6 +1,5 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
+import PageLayout from '@/components/PageLayout';
 
 export default async function Home() {
   const { navigation, page } = (await (
@@ -9,8 +8,21 @@ export default async function Home() {
 
   return (
     <>
-      <div id="navigation"></div>
-      <div id="page"></div>
+      <div
+        id="navigation"
+        className="bg-white"
+      >
+        {navigation.nodes.map(nav =>
+          nav.properties.map(prop => {
+            return <Navigation {...prop} />;
+          })
+        )}
+      </div>
+      <div id="page">
+        {page.properties.map(prop => {
+          return <PageLayout {...prop} />;
+        })}
+      </div>
     </>
   );
 }
