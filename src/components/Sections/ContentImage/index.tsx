@@ -21,17 +21,19 @@ const ContentImage = ({ properties }: ContentImageProps) => {
   return (
     <div
       id="content-image"
-      className="w-full flex"
+      className="w-full grid grid-cols-2 py-16"
     >
-      <div className="bg-transparent">
+      <div className="bg-transparent pl-40 pr-16">
         {filteredProperties.map(prop => {
           return <Content {...prop} />;
         })}
       </div>
-      <img
-        src={mediaItem?.url}
-        alt={String(mediaItem?.altText)}
-      />
+      <div>
+        <img
+          src={mediaItem?.url}
+          alt={String(mediaItem?.altText)}
+        />
+      </div>
     </div>
   );
 };

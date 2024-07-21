@@ -4,7 +4,7 @@ import Footer from '../Footer';
 
 const Components = {
   footers: Footer.Component,
-  headers: Header,
+  headers: Header.Component,
   default: Fragment,
 };
 

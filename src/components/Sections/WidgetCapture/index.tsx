@@ -13,12 +13,14 @@ const WidgetCaptureComponent = ({ properties }: WidgetCaptureComponentProps) => 
   return (
     <div
       id="widget-capture"
-      className="bg-dark py-16 px-40"
+      className="bg-dark grid grid-cols-2 py-16 px-40"
     >
-      <div className="bg-white flex">
+      <div className="bg-white flex flex-col px-8 py-16">
         {filteredProperties.map(prop => {
           return <Content {...prop} />;
         })}
+      </div>
+      <div>
         {typeof socialProperties !== 'string' &&
           socialProperties?.map(social => {
             return (
