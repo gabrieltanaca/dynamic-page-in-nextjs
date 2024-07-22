@@ -12,7 +12,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button
       {...props}
-      className={`${className} border border-borderGray py-4 flex justify-center items-center gap-2`}
+      className={`${className} border-2 border-borderGray py-4 flex justify-center items-center gap-2`}
     >
       {iconposition === 'left' && icon && <span>{icon}</span>}
       {title && <span>{title}</span>}

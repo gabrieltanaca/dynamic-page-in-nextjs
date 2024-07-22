@@ -11,7 +11,7 @@ const Input = (props: InputProps) => {
       <label>{label}</label>
       <input
         {...props}
-        className={`${className} border border-borderGray py-4 px-3 mt-2`}
+        className={`${className} border-2 border-borderGray py-4 px-3 mt-2`}
       />
     </div>
   );

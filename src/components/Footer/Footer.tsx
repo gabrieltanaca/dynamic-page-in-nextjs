@@ -11,10 +11,10 @@ const FooterComponent = ({ blocks }: FooterProps) => {
   return (
     <UI.Container
       id="footer"
-      className="pb-8 flex flex-col justify-between items-start max-md:gap-8"
+      className="pb-8 flex justify-between items-start max-md:gap-8 max-md:flex-col"
     >
       <Footer.LeftSide />
-      <div>
+      <div className="max-md:w-full">
         {blocks.map(block =>
           block.contentProperties?.map(content => {
             const contentBlocks = content.value.blocks;
@@ -24,15 +24,19 @@ const FooterComponent = ({ blocks }: FooterProps) => {
                 <div
                   key={uuid()}
                   className={
-                    'flex gap-20' +
-                    ' max-md:grid max-md:grid-cols-2 max-md:grid-rows-1 max-md:gap-8 grid-flow-dense'
+                    'md:flex gap-20' +
+                    ' max-md:grid max-md:grid-cols-2 max-md:gap-8 grid-flow-dense'
                   }
                 >
                   {contentBlocks.map(footerBlock => {
+                    const isLegalInformation = footerBlock.contentProperties?.find(
+                      x => x.value.value === 'Informações legais'
+                    );
+
                     return (
                       <div
                         key={uuid()}
-                        className={'flex flex-col gap-4'}
+                        className={`flex flex-col gap-4 ${isLegalInformation ? 'col-span-2' : 'col-span-1'}`}
                       >
                         {footerBlock.contentProperties?.map(footerContent => (
                           <Footer.Content
@@ -49,6 +53,11 @@ const FooterComponent = ({ blocks }: FooterProps) => {
             return <></>;
           })
         )}
+      </div>
+      <div className="md:hidden">
+        <span>SAC: </span>
+        <span className="border-b-2 border-borderGray">0800 888 1010</span>
+        <p>(segunda à sexta-feira, das 09h às 19h)</p>
       </div>
     </UI.Container>
   );

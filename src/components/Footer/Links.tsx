@@ -16,7 +16,7 @@ const Links = ({ links }: PropsWithChildren<Links>) => {
           <li key={uuid()}>
             <Link
               href={url}
-              className="border-b border-solid border-borderGray text-base"
+              className="border-b-2 border-solid border-borderGray text-base"
             >
               {name}
             </Link>
