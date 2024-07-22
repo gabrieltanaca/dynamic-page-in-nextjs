@@ -10,7 +10,7 @@ const HeaderComponent = ({ blocks }: HeaderProps) => {
   return (
     <UI.Container
       id="header"
-      className="!py-0 max-md:grid max-md:grid-cols-2"
+      className="!py-0 max-md:flex max-md:justify-between"
     >
       <Header.Top />
       <Header.NavHeader blocks={blocks} />
