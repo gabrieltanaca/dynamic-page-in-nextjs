@@ -15,9 +15,9 @@ const ContentImage = ({ properties }: ContentImageProps) => {
   return (
     <UI.Container
       id="content-image"
-      className="w-full grid grid-cols-2 px-0"
+      className="w-full grid md:grid-cols-2 !px-0 py-12"
     >
-      <div className="bg-transparent pl-40 pr-16">
+      <div className="pl-40 pr-16 max-md:p-0 max-md:px-4 max-md:pb-4">
         {filteredProperties.map(prop => {
           return (
             <Content
@@ -26,7 +26,14 @@ const ContentImage = ({ properties }: ContentImageProps) => {
             />
           );
         })}
+        <button
+          type="button"
+          className="md:hidden text-3xl font-bold float-right pr-4"
+        >
+          +
+        </button>
       </div>
+
       <img
         src={mediaItem?.url}
         alt={String(mediaItem?.altText)}

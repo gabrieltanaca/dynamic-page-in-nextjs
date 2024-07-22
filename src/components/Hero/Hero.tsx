@@ -35,7 +35,7 @@ const HeroComponent = ({ blocks }: PropsWithChildren<HeroComponentProps>) => {
         })}
         <button
           type="button"
-          className="text-4xl font-bold float-right"
+          className="text-3xl font-bold float-right md:hidden"
         >
           +
         </button>

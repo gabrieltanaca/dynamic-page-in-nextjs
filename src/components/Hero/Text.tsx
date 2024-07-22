@@ -13,7 +13,7 @@ const Text = ({ children, alias }: PropsWithChildren<TextProps>) => {
     case 'title':
       return <h2 className="text-h2/none max-md:text-6xl">{children}</h2>;
     case 'description':
-      return <p className="text-2xl max-md:text-lg max-md:leading-5">{children}</p>;
+      return <p className="text-2xl max-md:text-lg max-md:leading-5 max-md:mt-2">{children}</p>;
 
     default:
       return <Fragment />;
