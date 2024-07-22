@@ -8,15 +8,18 @@ interface Links {
 
 const Links = ({ links }: PropsWithChildren<Links>) => {
   return (
-    <ul>
+    <ul className="flex flex-col gap-4">
       {links.map(({ name, url }) => {
         return (
-          <Link
-            key={name}
-            href={url}
-          >
-            {name}
-          </Link>
+          <li>
+            <Link
+              key={name}
+              href={url}
+              className="border-b border-solid border-borderGray text-base"
+            >
+              {name}
+            </Link>
+          </li>
         );
       })}
     </ul>

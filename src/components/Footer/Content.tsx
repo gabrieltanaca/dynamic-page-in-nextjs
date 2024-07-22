@@ -1,8 +1,12 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, PropsWithChildren } from 'react';
 import Links from './Links';
 
+const TitleFooter = ({ children }: PropsWithChildren) => {
+  return <h4 className="text-h4 text-fontFooter">{String(children).toUpperCase()}</h4>;
+};
+
 const Components = {
-  titleFooter: 'h1',
+  titleFooter: TitleFooter,
   linkFooter: Links,
   default: Fragment,
 };

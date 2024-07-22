@@ -9,26 +9,33 @@ const FooterComponent = ({ blocks }: FooterProps) => {
   return (
     <div
       id="footer"
-      className="bg-pink-500"
+      className="px-40 pt-16 pb-8 flex justify-around items-start"
     >
-      {blocks.map(block =>
-        block.contentProperties?.map(content => {
-          const contentBlocks = content.value.blocks;
+      <Footer.LeftSide />
+      <div>
+        {blocks.map(block =>
+          block.contentProperties?.map(content => {
+            const contentBlocks = content.value.blocks;
 
-          if (contentBlocks) {
-            return (
-              <div>
-                {contentBlocks.map(footerBlock =>
-                  footerBlock.contentProperties?.map(footerContent => {
-                    return <Footer.Content {...footerContent} />;
-                  })
-                )}
-              </div>
-            );
-          }
-          return <span></span>;
-        })
-      )}
+            if (contentBlocks) {
+              return (
+                <div className="flex gap-20">
+                  {contentBlocks.map(footerBlock => {
+                    return (
+                      <div className="flex flex-col gap-4">
+                        {footerBlock.contentProperties?.map(footerContent => (
+                          <Footer.Content {...footerContent} />
+                        ))}
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            }
+            return <></>;
+          })
+        )}
+      </div>
     </div>
   );
 };
