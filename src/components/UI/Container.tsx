@@ -8,7 +8,7 @@ const Container = (
   return (
     <div
       {...props}
-      className={`${props.className} w-full px-40 py-16`}
+      className={`${props.className} w-full px-40 max-md:px-4 py-16 `}
     >
       {children}
     </div>

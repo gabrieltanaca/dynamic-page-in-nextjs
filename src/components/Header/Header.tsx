@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
 import Header from '.';
+import UI from '../UI';
 
 interface HeaderProps {
   blocks: Block[];
@@ -8,32 +8,14 @@ interface HeaderProps {
 
 const HeaderComponent = ({ blocks }: HeaderProps) => {
   return (
-    <div
+    <UI.Container
       id="header"
-      className="px-40"
+      className="!py-0 max-md:grid max-md:grid-cols-2"
     >
       <Header.Top />
-      <div className="py-3">
-        {blocks.map(block =>
-          block.contentProperties?.map(content => {
-            const links = content.value.links || [];
-            return (
-              <ul className="flex gap-3">
-                {links.map(({ url, name }) => (
-                  <Link
-                    key={name}
-                    href={url}
-                    className="text-h4"
-                  >
-                    {name}
-                  </Link>
-                ))}
-              </ul>
-            );
-          })
-        )}
-      </div>
-    </div>
+      <Header.NavHeader blocks={blocks} />
+      <Header.NavMobileHeader blocks={blocks} />
+    </UI.Container>
   );
 };
 

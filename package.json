@@ -12,6 +12,7 @@
     "prettier:fix": "prettier . --write"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.2",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
     "eslint-plugin-prettier": "^5.2.1",

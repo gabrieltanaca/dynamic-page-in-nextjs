@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import FacebookIcon from '@/assets/icons/FacebookIcon';
 import InstagramIcon from '@/assets/icons/InstagramIcon';
@@ -7,9 +6,9 @@ import Link from 'next/link';
 
 const Top = () => {
   return (
-    <div className="flex pt-7 justify-between items-center">
+    <div className="flex pt-7 max-md:py-5 justify-between items-center">
       <h4 className="text-xl font-extrabold tracking-tighter">LOREM IPSUM</h4>
-      <div className="flex gap-4">
+      <div className="flex gap-4 max-md:hidden">
         <Link href={'/'}>
           <InstagramIcon />
         </Link>
