@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const LeftSide = () => {
   return (
-    <div className="flex pt-7 items-center gap-8">
+    <div className="flex pt-7 items-center gap-8 max-md:flex-col max-md:items-start max-md:pt-0">
       <h4 className="text-xl font-extrabold tracking-tighter">LOREM IPSUM</h4>
       <div className="flex gap-4">
         <Link href={'/'}>

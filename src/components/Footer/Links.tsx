@@ -5,6 +5,7 @@ import { PropsWithChildren } from 'react';
 
 interface Links {
   links: Link[];
+  alias?: string;
 }
 
 const Links = ({ links }: PropsWithChildren<Links>) => {

@@ -35,7 +35,7 @@ export default async function Home() {
           );
         })}
       </div>
-      {/* <footer>
+      <footer>
         {footers.map(prop => {
           return (
             <Navigation
@@ -44,7 +44,7 @@ export default async function Home() {
             />
           );
         })}
-      </footer> */}
+      </footer>
     </div>
   );
 }

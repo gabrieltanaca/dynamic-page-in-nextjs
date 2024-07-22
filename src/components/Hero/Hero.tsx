@@ -16,10 +16,15 @@ const HeroComponent = ({ blocks }: PropsWithChildren<HeroComponentProps>) => {
   return (
     <div
       id="hero"
-      className={`relative w-full h-screen bg-cover bg-center`}
+      className={`relative w-full h-screen bg-cover bg-center max-md:border-y-[1rem] max-md:border-fontDark`}
       style={{ backgroundImage: `url('${mediaItem.url}')` }}
     >
-      <div className="absolute bg-white right-0 bottom-[2rem] w-[34rem] h-[28rem] p-8 mr-40 ">
+      <div
+        className={
+          'absolute bg-white right-0 bottom-[2rem] w-[34rem] p-8 md:mr-40 break-words' +
+          ' max-md:bottom-[1rem] max-md:w-72 max-md:p-4'
+        }
+      >
         {filteredProperties?.map(prop => {
           return (
             <Hero.Content
@@ -28,6 +33,12 @@ const HeroComponent = ({ blocks }: PropsWithChildren<HeroComponentProps>) => {
             />
           );
         })}
+        <button
+          type="button"
+          className="text-4xl font-bold float-right"
+        >
+          +
+        </button>
       </div>
     </div>
   );
