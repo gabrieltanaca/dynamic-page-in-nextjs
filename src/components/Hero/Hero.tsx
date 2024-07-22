@@ -13,8 +13,8 @@ const HeroComponent = ({ blocks }: PropsWithChildren<HeroComponentProps>) => {
   const filteredProperties = filterPropertiesByAlias(properties);
 
   return (
-    <div id="Hero">
-      <div className="absolute bg-white right-0 bottom-[-10.5rem] w-[555px] h-[466px] p-8 mr-40 ">
+    <div id="hero" className='relative'>
+      <div className="absolute bg-white right-0 bottom-[2rem] w-[34rem] h-[28rem] p-8 mr-40 ">
         {filteredProperties?.map(prop => {
           return <Hero.Content {...prop} />;
         })}
