@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import HamburguerMenuIcon from '../../assets/icons/HamburguerMenuIcon';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import uuid from '@/utils/uuid';
 
 interface DropdownProps {
   items: DropdownItem[];
@@ -26,9 +27,8 @@ const Dropdown = ({ items }: DropdownProps) => {
         }
       >
         {items.map(({ label, href }) => (
-          <MenuItem>
+          <MenuItem key={uuid()}>
             <Link
-              key={label}
               href={href}
               className="text-h4 max-md:border-b-2 max-md:border-borderGray"
             >

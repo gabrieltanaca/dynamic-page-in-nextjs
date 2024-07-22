@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import PageLayout from '@/components/PageLayout';
+import uuid from '@/utils/uuid';
 import { getNodePropertiesByAlias, orderPropertiesByAlias } from '@/utils/dynamicPageUtils';
 
 export default async function Home() {
@@ -16,19 +17,34 @@ export default async function Home() {
     <div className="bg-white text-fontDark">
       <header id="navigation">
         {headers.map(prop => {
-          return <Navigation {...prop} />;
+          return (
+            <Navigation
+              key={uuid()}
+              {...prop}
+            />
+          );
         })}
       </header>
       <div id="page">
         {pageProperties.map(prop => {
-          return <PageLayout {...prop} />;
+          return (
+            <PageLayout
+              key={uuid()}
+              {...prop}
+            />
+          );
         })}
       </div>
-      <footer>
+      {/* <footer>
         {footers.map(prop => {
-          return <Navigation {...prop} />;
+          return (
+            <Navigation
+              key={uuid()}
+              {...prop}
+            />
+          );
         })}
-      </footer>
+      </footer> */}
     </div>
   );
 }

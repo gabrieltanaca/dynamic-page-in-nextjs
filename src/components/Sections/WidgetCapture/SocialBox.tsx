@@ -3,6 +3,7 @@ import FacebookIcon from '@/assets/icons/FacebookIcon';
 import GoogleIcon from '@/assets/icons/GoogleIcon';
 import UI from '@/components/UI';
 import Divider from '@/components/UI/Divider';
+import uuid from '@/utils/uuid';
 import React from 'react';
 
 const ButtonIcons = {
@@ -25,6 +26,7 @@ const SocialBox = ({ properties }: SocialBoxProps) => {
           const Icon = ButtonIcons?.[social as ButtonIconsKey];
           return (
             <UI.Button
+              key={uuid()}
               title={social}
               icon={Icon?.icon || <div />}
               style={{
@@ -46,7 +48,7 @@ const SocialBox = ({ properties }: SocialBoxProps) => {
           title="Próximo"
           className="border-none "
           icon={<ChevronRightIcon />}
-          iconPosition="right"
+          iconposition="right"
         />
       </div>
     </div>

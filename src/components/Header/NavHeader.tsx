@@ -1,3 +1,4 @@
+import uuid from '@/utils/uuid';
 import Link from 'next/link';
 import React from 'react';
 
@@ -12,10 +13,13 @@ const NavHeader = ({ blocks }: NavHeaderProps) => {
         block.contentProperties?.map(content => {
           const links = content.value.links || [];
           return (
-            <ul className="flex gap-6">
+            <ul
+              key={uuid()}
+              className="flex gap-6"
+            >
               {links.map(({ url, name }) => (
                 <Link
-                  key={name}
+                  key={uuid()}
                   href={url}
                   className="text-h4"
                 >

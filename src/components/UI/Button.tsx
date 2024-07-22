@@ -3,20 +3,20 @@ import React from 'react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   title?: string;
   icon?: JSX.Element;
-  iconPosition?: 'left' | 'right';
+  iconposition?: 'left' | 'right';
 }
 
 const Button = (props: ButtonProps) => {
-  const { className, title, icon, iconPosition = 'left' } = props;
+  const { className, title, icon, iconposition = 'left' } = props;
 
   return (
     <button
       {...props}
       className={`${className} border border-borderGray py-4 flex justify-center items-center gap-2`}
     >
-      {iconPosition === 'left' && icon && <span>{icon}</span>}
+      {iconposition === 'left' && icon && <span>{icon}</span>}
       {title && <span>{title}</span>}
-      {iconPosition === 'right' && icon && <span>{icon}</span>}
+      {iconposition === 'right' && icon && <span>{icon}</span>}
     </button>
   );
 };

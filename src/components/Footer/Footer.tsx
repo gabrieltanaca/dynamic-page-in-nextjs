@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '.';
 import UI from '../UI';
+import uuid from '@/utils/uuid';
 
 interface FooterProps {
   blocks: Block[];
@@ -20,12 +21,21 @@ const FooterComponent = ({ blocks }: FooterProps) => {
 
             if (contentBlocks) {
               return (
-                <div className="flex gap-20">
+                <div
+                  key={uuid()}
+                  className="flex gap-20"
+                >
                   {contentBlocks.map(footerBlock => {
                     return (
-                      <div className="flex flex-col gap-4">
+                      <div
+                        key={uuid()}
+                        className="flex flex-col gap-4"
+                      >
                         {footerBlock.contentProperties?.map(footerContent => (
-                          <Footer.Content {...footerContent} />
+                          <Footer.Content
+                            key={uuid()}
+                            {...footerContent}
+                          />
                         ))}
                       </div>
                     );

@@ -2,6 +2,7 @@ import React from 'react';
 import Content from './Content';
 import { filterPropertiesByAlias, getMediaItemsByAlias } from '@/utils/dynamicPageUtils';
 import UI from '@/components/UI';
+import uuid from '@/utils/uuid';
 
 interface ContentImageProps {
   properties: ContentProperty[];
@@ -18,7 +19,12 @@ const ContentImage = ({ properties }: ContentImageProps) => {
     >
       <div className="bg-transparent pl-40 pr-16">
         {filteredProperties.map(prop => {
-          return <Content {...prop} />;
+          return (
+            <Content
+              key={uuid()}
+              {...prop}
+            />
+          );
         })}
       </div>
       <img

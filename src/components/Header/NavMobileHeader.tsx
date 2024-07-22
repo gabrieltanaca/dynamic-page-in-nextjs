@@ -1,5 +1,6 @@
 import React from 'react';
 import Dropdown from '../UI/Dropdown';
+import uuid from '@/utils/uuid';
 
 interface NavMobileHeaderProps {
   blocks: Block[];
@@ -12,7 +13,12 @@ const NavMobileHeader = ({ blocks }: NavMobileHeaderProps) => {
         block.contentProperties?.map(content => {
           const links = content.value.links?.map(x => ({ label: x.name, href: x.url })) || [];
 
-          return <Dropdown items={links} />;
+          return (
+            <Dropdown
+              key={uuid()}
+              items={links}
+            />
+          );
         })
       )}
     </div>
