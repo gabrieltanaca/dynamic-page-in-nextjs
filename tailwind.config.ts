@@ -23,6 +23,7 @@ const config: Config = {
         h2: '80px',
         h3: '48px',
         h4: '20px',
+        mobileTitle: '40px',
       },
     },
   },

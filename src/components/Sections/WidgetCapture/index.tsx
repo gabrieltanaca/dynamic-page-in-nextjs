@@ -16,9 +16,9 @@ const WidgetCaptureComponent = ({ properties }: WidgetCaptureComponentProps) => 
   return (
     <UI.Container
       id="widget-capture"
-      className="bg-dark"
+      className="bg-dark max-md:pt-60"
     >
-      <div className="bg-white grid grid-cols-2 px-8 py-16">
+      <div className="bg-white grid md:grid-cols-2 px-8 py-16 max-md:px-4 max-md:py-6">
         <div className="flex flex-col pr-8">
           {filteredProperties.map(prop => {
             return (

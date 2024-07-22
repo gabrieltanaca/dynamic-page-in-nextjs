@@ -19,9 +19,9 @@ interface SocialBoxProps {
 
 const SocialBox = ({ properties }: SocialBoxProps) => {
   return (
-    <div className="py-8">
+    <div className="py-8 max-md:py-4 max-md:pb-0">
       <p className="pb-4 text-base">Cadastre-se com sua rede social:</p>
-      <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+      <div className="grid md:grid-cols-2 gap-y-4 gap-x-6">
         {properties.map(social => {
           const Icon = ButtonIcons?.[social as ButtonIconsKey];
           return (
@@ -38,7 +38,7 @@ const SocialBox = ({ properties }: SocialBoxProps) => {
         })}
       </div>
       <Divider>OU</Divider>
-      <div className="w-full flex justify-center items-end gap-4 pt-4">
+      <div className="w-full flex justify-center items-end gap-4 pt-4 max-md:flex-col max-md:items-center">
         <UI.Input
           label="Seu e-mail:"
           placeholder="seu@email.com"
@@ -46,7 +46,7 @@ const SocialBox = ({ properties }: SocialBoxProps) => {
         />
         <UI.Button
           title="Próximo"
-          className="border-none "
+          className="border-none max-md:text-xl"
           icon={<ChevronRightIcon />}
           iconposition="right"
         />
