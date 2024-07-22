@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '.';
+import UI from '../UI';
 
 interface FooterProps {
   blocks: Block[];
@@ -7,9 +8,9 @@ interface FooterProps {
 
 const FooterComponent = ({ blocks }: FooterProps) => {
   return (
-    <div
+    <UI.Container
       id="footer"
-      className="px-40 pt-16 pb-8 flex justify-around items-start"
+      className="pb-8 flex justify-between items-start"
     >
       <Footer.LeftSide />
       <div>
@@ -36,7 +37,7 @@ const FooterComponent = ({ blocks }: FooterProps) => {
           })
         )}
       </div>
-    </div>
+    </UI.Container>
   );
 };
 

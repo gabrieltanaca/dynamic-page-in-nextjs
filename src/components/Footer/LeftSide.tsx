@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const LeftSide = () => {
   return (
-    <div className="flex pt-7 items-center">
-      <h4 className="text-xl font-extrabold tracking-tighter gap-8">LOREM IPSUM</h4>
+    <div className="flex pt-7 items-center gap-8">
+      <h4 className="text-xl font-extrabold tracking-tighter">LOREM IPSUM</h4>
       <div className="flex gap-4">
         <Link href={'/'}>
           <InstagramIcon />
