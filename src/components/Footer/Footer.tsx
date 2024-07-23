@@ -54,11 +54,6 @@ const FooterComponent = ({ blocks }: FooterProps) => {
           })
         )}
       </div>
-      <div className="md:hidden">
-        <span>SAC: </span>
-        <span className="border-b-2 border-borderGray">0800 888 1010</span>
-        <p>(segunda à sexta-feira, das 09h às 19h)</p>
-      </div>
     </UI.Container>
   );
 };
