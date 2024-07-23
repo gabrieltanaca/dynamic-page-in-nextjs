@@ -34,9 +34,8 @@ const ContentImage = ({ properties }: ContentImageProps) => {
           +
         </button>
       </div>
-
-      <Image
-        src={mediaItem?.url || ''}
+      <img
+        src={mediaItem?.url}
         alt={String(mediaItem?.altText)}
       />
     </UI.Container>
