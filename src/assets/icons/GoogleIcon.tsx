@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const GoogleIcon = () => {
   return (
     <svg
       width="23"

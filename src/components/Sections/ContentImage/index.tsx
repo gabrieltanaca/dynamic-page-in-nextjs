@@ -3,6 +3,7 @@ import Content from './Content';
 import { filterPropertiesByAlias, getMediaItemsByAlias } from '@/utils/dynamicPageUtils';
 import UI from '@/components/UI';
 import uuid from '@/utils/uuid';
+import Image from 'next/image';
 
 interface ContentImageProps {
   properties: ContentProperty[];
@@ -34,8 +35,8 @@ const ContentImage = ({ properties }: ContentImageProps) => {
         </button>
       </div>
 
-      <img
-        src={mediaItem?.url}
+      <Image
+        src={mediaItem?.url || ''}
         alt={String(mediaItem?.altText)}
       />
     </UI.Container>
